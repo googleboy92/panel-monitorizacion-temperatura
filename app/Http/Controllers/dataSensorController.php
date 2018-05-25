@@ -3,18 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\data_station;
+use App\dataSensor;
 
 
 class dataSensorController extends Controller
 {
     //
+    
 
     public function store ($humidity, $temperature){
-
-        $data = new data_station;
         
-        $data->humedity = $humidity;
+
+        $data = new dataSensor;
+        
+        $data->humidity = $humidity;
         $data->temperature= $temperature;
                 
         $data->save();
