@@ -9,11 +9,9 @@ use App\dataSensor;
 class dataSensorController extends Controller
 {
     //
-    
 
     public function store ($humidity, $temperature){
         
-
         $data = new dataSensor;
         
         $data->humidity = $humidity;
